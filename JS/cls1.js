@@ -34,8 +34,8 @@
 
 // console.log(b--);
 
-let a = 5;
-let b = 4;
+// let a = 5;
+// let b = 4;
 // Comparison Operators
 // console.log(a == b); // true false
 // console.log(typeof a);
@@ -45,3 +45,23 @@ let b = 4;
 
 // console.log(a !== b); // true false
 // console.log(a <= b); // true false
+
+// let text1 = "A";
+// let text2 = "B";
+
+// concat of string
+// console.log(text1 + " " + text2);
+
+// let text1 = "What a very ";
+// text1 += "nice day";
+// console.log(text1);
+
+//JavaScript Logical Operators
+let a = 7;
+let b = 4;
+let c = 6;
+let d = 99;
+
+// console.log(a > b && a > c); // true false= false
+
+console.log(a > b || a > c || a > !d); // true false= true

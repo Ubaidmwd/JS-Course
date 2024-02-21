@@ -57,11 +57,48 @@
 // console.log(text1);
 
 //JavaScript Logical Operators
-let a = 7;
-let b = 4;
-let c = 6;
-let d = 99;
+// let a = 7;
+// let b = 4;
+// let c = 6;
+// let d = 99;
 
-// console.log(a > b && a > c); // true false= false
+// // console.log(a > b && a > c); // true false= false
 
-console.log(a > b || a > c || a > !d); // true false= true
+// console.log(a > b || a > c || a > !d); // true false= true
+
+// Numbers:
+// let length = 16;
+// let weight = 7.5;
+// console.log(typeof length);
+
+// Strings:
+// let color = "Yellow";
+// let lastName = "Johnson";
+// console.log(typeof color);
+
+// Booleans
+// let x = true;
+// let y = false;
+// console.log(typeof y);
+
+// Object:
+// let firstName = "John";
+// let lastName = "Doe";
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+// };
+// // console.log(typeof person);
+// console.log(person.firstName);
+
+// Array object:
+// const cars = ["Saab", "Volvo", "BMW"];
+// console.log(typeof cars);
+
+// Date object:
+// const date = new Date("2022-03-25");
+// console.log(typeof date);
+
+// object {}
+// array []

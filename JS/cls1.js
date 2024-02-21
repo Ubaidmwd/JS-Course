@@ -25,6 +25,11 @@
 // Ternary Operators
 // Type Operators
 
-const a = 4;
-const b = 6;
-console.log("sum of a and b == ", a + b);
+// let a = 4;
+// let b = 9;
+// const result = ++a + --b;
+
+// //++a is example of prefix increment & b-- is the example of post fix
+// console.log("sum of a and b == ", result);
+
+// console.log(b--);

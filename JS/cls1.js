@@ -34,11 +34,14 @@
 
 // console.log(b--);
 
-// let a = 4;
-// let b = 9;
-// const result = ++a + --b;
+let a = 5;
+let b = 4;
+// Comparison Operators
+// console.log(a == b); // true false
+// console.log(typeof a);
+// console.log(typeof b);
+// console.log(a + b);
+// console.log(a === b); // true false
 
-// //++a is example of prefix increment & b-- is the example of post fix
-// console.log("sum of a and b == ", result);
-
-// console.log(b--);
+// console.log(a !== b); // true false
+// console.log(a <= b); // true false

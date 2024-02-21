@@ -14,3 +14,17 @@
 // const a = "classs one";
 // a = "abc";
 // console.log(a);
+
+//************** Operators in JS ****************/
+// Arithmetic Operators . it is used for mathematically operations (+,-,%,/,*)
+// Assignment Operators . it is used for assigning value to variable
+// Comparison Operators
+// String Operators
+// Logical Operators
+// Bitwise Operators
+// Ternary Operators
+// Type Operators
+
+const a = 4;
+const b = 6;
+console.log("sum of a and b == ", a + b);

@@ -69,7 +69,7 @@
 // Numbers:
 // let length = 16;
 // let weight = 7.5;
-// console.log(typeof length);
+// console.log(type of length);
 
 // Strings:
 // let color = "Yellow";
@@ -102,3 +102,24 @@
 
 // object {}
 // array []
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+// };
+
+// const person2 = { ...person };
+// person.firstName = "Jan";
+// console.log(person2);
+// console.log(person);
+// console.log(person.firstName);
+// let a = 9;
+// let b = a;
+// a = 10;
+// console.log(b);
+// const food = { beef: "🥩", bacon: "🥓" };
+
+// const cloneFood = Object.assign({ address: "abc" }, food);
+// food.beef = "🍔";
+// console.log(cloneFood);
+// console.log(food);

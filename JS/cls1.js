@@ -123,3 +123,47 @@
 // food.beef = "🍔";
 // console.log(cloneFood);
 // console.log(food);
+
+// const food = { beef: "🥩", bacon: "🥓" };
+
+// const cloneFood = JSON.parse(JSON.stringify(food));
+
+// console.log(cloneFood);
+
+// function add(a, b) {
+//   return a * b;
+// }
+// console.log(add(6, 6));
+
+//array methods
+// const arr = [1, 3, 4, 5];
+// arr.unshift(1); // adding data from the start
+// arr.shift(); // remove data from the start
+// arr.pop(); // remove data from the end of array
+// arr.push(6); // adding data from the end of array
+// console.log(arr.at(2)); // at is used for finding elemet on index numuber
+// arr.splice(0, 2, 6); //The splice() method can be used to add new items to an array. first parameter is used for position & second is used for how many elements removing from array & the other parameter is used for add element in array
+// const myGirls = ["Cecilie", "Lone"];
+// const myBoys = ["Emil", "Tobias", "Linus"];
+
+// console.log(myGirls + "," + myBoys);// concat method in js
+// const myChildren = myGirls.concat("Khan", myBoys); // is parameter is used for add new element other is a arry which we want
+// console.log(myChildren);
+
+// const myArr = [
+//   [1, 2],
+//   [3, 4],
+//   [5, 6],
+// ];
+// const newArr = myArr.flat(); // it is used for converting the array in one directional array
+// console.log(newArr);
+
+// const months = ["Jan", "Feb", "Mar", "Apr"];
+// // ES2023 added the Array toSpliced() method as a safe way to splice an array without altering the original array.The difference between the new toSpliced() method and the old splice() method is that the new method creates a new array, keeping the original array unchanged, while the old method altered the original array.
+// const spliced = months.toSpliced(4, 1, "May");
+
+// console.log(spliced);
+
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(0, 5); // 1st parameter is used for the startin index while the 2nd parameter is used for end of index number
+console.log(citrus);

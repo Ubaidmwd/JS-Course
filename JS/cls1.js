@@ -159,11 +159,16 @@
 // console.log(newArr);
 
 // const months = ["Jan", "Feb", "Mar", "Apr"];
-// // ES2023 added the Array toSpliced() method as a safe way to splice an array without altering the original array.The difference between the new toSpliced() method and the old splice() method is that the new method creates a new array, keeping the original array unchanged, while the old method altered the original array.
-// const spliced = months.toSpliced(4, 1, "May");
+// ES2023 added the Array toSpliced() method as a safe way to splice an array without altering the original array.The difference between the new toSpliced() method and the old splice() method is that the new method creates a new array, keeping the original array unchanged, while the old method altered the original array.
+// const spliced = months.toSpliced(4, 2, "May"); // 1st method is used for position wher you want to add new element in array,
 
 // console.log(spliced);
 
-const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-const citrus = fruits.slice(0, 5); // 1st parameter is used for the startin index while the 2nd parameter is used for end of index number
-console.log(citrus);
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(0, 5); // 1st parameter is used for the startin index while the 2nd parameter is used for end of index number
+// console.log(citrus);
+
+const ageFind = (age) => {
+  return age >= 18;
+};
+console.log(ageFind(2));

@@ -137,16 +137,20 @@
 
 //array methods
 // const arr = [1, 3, 4, 5];
-// arr.unshift(1); // adding data from the start
+// arr.unshift("wahab", "Hizbullah"); // adding data from the start
 // arr.shift(); // remove data from the start
+// console.log(arr);
+
 // arr.pop(); // remove data from the end of array
 // arr.push(6); // adding data from the end of array
+
 // console.log(arr.at(2)); // at is used for finding elemet on index numuber
-// arr.splice(0, 2, 6); //The splice() method can be used to add new items to an array. first parameter is used for position & second is used for how many elements removing from array & the other parameter is used for add element in array
+// arr.splice(2, 4, 3.5); //The splice() method can be used to add new items to an array. first parameter is used for position & second is used for how many elements removing from array & the other parameter is used for add element in array
+
 // const myGirls = ["Cecilie", "Lone"];
 // const myBoys = ["Emil", "Tobias", "Linus"];
 
-// console.log(myGirls + "," + myBoys);// concat method in js
+// console.log([myGirls + "," + myBoys]); // concat method in js
 // const myChildren = myGirls.concat("Khan", myBoys); // is parameter is used for add new element other is a arry which we want
 // console.log(myChildren);
 
@@ -160,15 +164,61 @@
 
 // const months = ["Jan", "Feb", "Mar", "Apr"];
 // ES2023 added the Array toSpliced() method as a safe way to splice an array without altering the original array.The difference between the new toSpliced() method and the old splice() method is that the new method creates a new array, keeping the original array unchanged, while the old method altered the original array.
-// const spliced = months.toSpliced(4, 2, "May"); // 1st method is used for position wher you want to add new element in array,
+// const spliced = months.toSpliced(4, 3, "May"); // 1st method is used for position wher you want to add new element in array,
 
 // console.log(spliced);
 
 // const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-// const citrus = fruits.slice(0, 5); // 1st parameter is used for the startin index while the 2nd parameter is used for end of index number
+// const citrus = fruits.slice(1, 3); // 1st parameter is used for the startin index while the 2nd parameter is used for end of index number
 // console.log(citrus);
 
 // const ageFind = (age) => {
 //   return age >= 18;
 // };
 // console.log(ageFind(2));
+
+// const authState = true;
+
+// console.log(authState === true ? "www.google.com" : "please login first");
+
+// document.write(authState === true ? "www.google.com" : "please login first");
+// const add = (a, b, c) => {
+//   //   console.log("Arrow function in js");
+//   console.log(a + b + c);
+//   console.log(a - c);
+// };
+// add(4, 6, 8);
+// add(5, 6, 7);
+
+// const ageFind = (a) => {
+//   if (a >= 18) {
+//     console.log("you are allow for voting !");
+//   } else {
+//     console.log("you are not allow for voting !");
+//   }
+// };
+// const user1 = 18;
+// const user2 = 16;
+// const user3 = 66;
+// ageFind(user1);
+// ageFind(user2);
+// ageFind(user3);
+
+const calculateBilling = (a, b) => {
+  const totalUnits = a - b;
+  console.log("total units is ", totalUnits);
+  if (totalUnits <= 100) {
+    console.log("total bill is ", totalUnits * 8);
+  } else if (totalUnits > 100) {
+    console.log("total bill is ", totalUnits * 13);
+  } else if (totalUnits > 200) {
+    console.log("total bill is ", totalUnits * 21);
+  }
+};
+
+const currentReading = 880;
+const prevReading = 700;
+const currentReading1 = 1300;
+const prevReading1 = 600;
+// calculateBilling(currentReading, prevReading);
+calculateBilling(currentReading1, prevReading1);

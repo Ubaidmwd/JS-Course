@@ -168,7 +168,7 @@
 // const citrus = fruits.slice(0, 5); // 1st parameter is used for the startin index while the 2nd parameter is used for end of index number
 // console.log(citrus);
 
-const ageFind = (age) => {
-  return age >= 18;
-};
-console.log(ageFind(2));
+// const ageFind = (age) => {
+//   return age >= 18;
+// };
+// console.log(ageFind(2));

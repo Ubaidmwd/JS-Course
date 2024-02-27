@@ -206,19 +206,22 @@
 
 const calculateBilling = (a, b) => {
   const totalUnits = a - b;
-  console.log("total units is ", totalUnits);
-  if (totalUnits <= 100) {
-    console.log("total bill is ", totalUnits * 8);
-  } else if (totalUnits > 100) {
-    console.log("total bill is ", totalUnits * 13);
-  } else if (totalUnits > 200) {
-    console.log("total bill is ", totalUnits * 21);
+  //   alert(``);
+  if (totalUnits > 0) {
+    if (totalUnits <= 100) {
+      // console.log("total bill is ", totalUnits * 8);
+      alert(`total units is ${totalUnits} total bill is ${totalUnits * 8}`);
+    } else if (totalUnits > 100) {
+      alert(`total units is ${totalUnits} total bill is ${totalUnits * 13}`);
+    } else if (totalUnits > 200) {
+      alert(`total units is ${totalUnits} total bill is ${totalUnits * 21}`);
+    }
+  } else {
+    confirm("Please confirm your current reading!");
   }
 };
 
-const currentReading = 880;
-const prevReading = 700;
-const currentReading1 = 1300;
-const prevReading1 = 600;
-// calculateBilling(currentReading, prevReading);
-calculateBilling(currentReading1, prevReading1);
+const currentReading = prompt("Enter the current Reading plz");
+const prevReading = prompt("Enter the prev Reading plz");
+
+calculateBilling(currentReading, prevReading);

@@ -204,24 +204,48 @@
 // ageFind(user2);
 // ageFind(user3);
 
-const calculateBilling = (a, b) => {
-  const totalUnits = a - b;
-  //   alert(``);
-  if (totalUnits > 0) {
-    if (totalUnits <= 100) {
-      // console.log("total bill is ", totalUnits * 8);
-      alert(`total units is ${totalUnits} total bill is ${totalUnits * 8}`);
-    } else if (totalUnits > 100) {
-      alert(`total units is ${totalUnits} total bill is ${totalUnits * 13}`);
-    } else if (totalUnits > 200) {
-      alert(`total units is ${totalUnits} total bill is ${totalUnits * 21}`);
-    }
-  } else {
-    confirm("Please confirm your current reading!");
-  }
-};
+// const calculateBilling = (a, b) => {
+//   const totalUnits = a - b;
+//   if (totalUnits > 0) {
+//     if (totalUnits <= 100) {
+//       // console.log("total bill is ", totalUnits * 8);
+//       alert(`total units is ${totalUnits} total bill is ${totalUnits * 8}`);
+//     } else if (totalUnits > 100) {
+//       alert(`total units is ${totalUnits} total bill is ${totalUnits * 13}`);
+//     } else if (totalUnits > 200) {
+//       alert(`total units is ${totalUnits} total bill is ${totalUnits * 21}`);
+//     }
+//   } else {
+//     confirm("Please confirm your current reading!");
+//   }
+// };
 
-const currentReading = prompt("Enter the current Reading plz");
-const prevReading = prompt("Enter the prev Reading plz");
+// const currentReading = prompt("Enter the current Reading plz");
+// const prevReading = prompt("Enter the prev Reading plz");
 
-calculateBilling(currentReading, prevReading);
+// calculateBilling(currentReading, prevReading);
+
+//looping
+
+// const userData = ["Abdulwahab", "HizbUllah", "Saifullah"];
+const userData = [
+  { name: "Abdulwahab", age: 25 },
+  { name: "HizbUllah", age: 28 },
+  { name: "Saifullah", age: 30 },
+];
+// console.log(userData.name);
+// for (let i = 0; i < userData.length; i++) {
+//   console.log(i);
+//   console.log(userData[i].name, userData[i].age);
+// }
+
+// console.log("After Looping");
+// userData.map((user) => {
+//   console.log(user.name);
+//   console.log(user.age);
+// });
+for (let user in userData) {
+  console.log(
+    `my name is ${userData[user].name} &  my age is ${userData[user].age}`
+  );
+}

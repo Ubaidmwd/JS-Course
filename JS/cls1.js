@@ -228,11 +228,11 @@
 //looping
 
 // const userData = ["Abdulwahab", "HizbUllah", "Saifullah"];
-const userData = [
-  { name: "Abdulwahab", age: 25 },
-  { name: "HizbUllah", age: 28 },
-  { name: "Saifullah", age: 30 },
-];
+// const userData = [
+//   { name: "Abdulwahab", age: 25 },
+//   { name: "HizbUllah", age: 28 },
+//   { name: "Saifullah", age: 30 },
+// ];
 // console.log(userData.name);
 // for (let i = 0; i < userData.length; i++) {
 //   console.log(i);
@@ -244,8 +244,20 @@ const userData = [
 //   console.log(user.name);
 //   console.log(user.age);
 // });
-for (let user in userData) {
-  console.log(
-    `my name is ${userData[user].name} &  my age is ${userData[user].age}`
-  );
+// for (let user in userData) {
+//   console.log(
+//     `my name is ${userData[user].name} &  my age is ${userData[user].age}`
+//   );
+// }
+// const fruits = ["apple", "orange", "cherry"];
+// userData.forEach((user) => {
+//   console.log(user);
+// });
+
+// console.log(userData.hasOwnProperty(3));
+function func() {
+  console.log("function is calling...");
 }
+console.log("before calling");
+func();
+console.log("after calling");

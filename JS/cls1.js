@@ -255,9 +255,51 @@
 // });
 
 // console.log(userData.hasOwnProperty(3));
-function func() {
-  console.log("function is calling...");
+
+const usersData = [
+  {
+    name: "Abdul Wahab",
+    profession: "Front End developer",
+  },
+  {
+    name: "Hizb Ullah",
+    profession: "Full Stack developer",
+  },
+];
+function getData() {
+  setTimeout(() => {
+    let outPut = "";
+    usersData.forEach((data, index) => {
+      outPut += `<li>${data.name}</li>`;
+    });
+    document.body.innerHTML = outPut;
+    console.log(outPut);
+  }, 100);
 }
-console.log("before calling");
-func();
-console.log("after calling");
+// function createData(newData, cb) {
+//   setTimeout(() => {
+//     usersData.push(newData);
+//     cb();
+//   }, 2000);
+// }
+
+function createData(newData) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      usersData.push(newData);
+      let error = false;
+      if (!error) {
+        resolve();
+      } else {
+        reject("some went wrong!...");
+      }
+    }, 2000);
+  });
+}
+
+createData({
+  name: "Feroz Khan",
+  profession: "Full Stack developer",
+})
+  .then(getData)
+  .catch((err) => console.log(err));

@@ -256,26 +256,26 @@
 
 // console.log(userData.hasOwnProperty(3));
 
-const usersData = [
-  {
-    name: "Abdul Wahab",
-    profession: "Front End developer",
-  },
-  {
-    name: "Hizb Ullah",
-    profession: "Full Stack developer",
-  },
-];
-function getData() {
-  setTimeout(() => {
-    let outPut = "";
-    usersData.forEach((data, index) => {
-      outPut += `<li>${data.name}</li>`;
-    });
-    document.body.innerHTML = outPut;
-    console.log(outPut);
-  }, 100);
-}
+// const usersData = [
+//   {
+//     name: "Abdul Wahab",
+//     profession: "Front End developer",
+//   },
+//   {
+//     name: "Hizb Ullah",
+//     profession: "Full Stack developer",
+//   },
+// ];
+// function getData() {
+//   setTimeout(() => {
+//     let outPut = "";
+//     usersData.forEach((data, index) => {
+//       outPut += `<li>${data.name}</li>`;
+//     });
+//     document.body.innerHTML = outPut;
+//     console.log(outPut);
+//   }, 100);
+// }
 // function createData(newData, cb) {
 //   setTimeout(() => {
 //     usersData.push(newData);
@@ -283,23 +283,48 @@ function getData() {
 //   }, 2000);
 // }
 
-function createData(newData) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      usersData.push(newData);
-      let error = false;
-      if (!error) {
-        resolve();
-      } else {
-        reject("some went wrong!...");
-      }
-    }, 2000);
-  });
-}
+// function createData(newData) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       usersData.push(newData);
+//       let error = false;
+//       if (!error) {
+//         resolve();
+//       } else {
+//         reject("some went wrong!...");
+//       }
+//     }, 2000);
+//   });
+// }
 
-createData({
-  name: "Feroz Khan",
-  profession: "Full Stack developer",
-})
-  .then(getData)
-  .catch((err) => console.log(err));
+// createData({
+//   name: "Feroz Khan",
+//   profession: "Full Stack developer",
+// })
+//   .then(getData)
+//   .catch((err) => console.log(err));
+
+// async function start() {
+//   await createData({
+//     name: "Feroz Khan",
+//     profession: "Full Stack developer",
+//   });
+//   getData();
+// }
+// start();
+
+// const words = [
+//   "spray",
+//   "elite",
+//   "exuberant",
+//   "destruction",
+//   "present",
+//   "destruction",
+// ];
+
+// const result = words.filter((word) => word === "destruction");
+// const result = words.filter((word) => word.length > 6);
+
+// console.log(result);
+
+// const abc = () => {};
